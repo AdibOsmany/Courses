@@ -11,7 +11,7 @@ This portfolio showcases a collection of my coding assignments, projects, and a 
 <pre><code>
 Map:
 ├───Courses
-│   ├──────Algorithms (CS 385)
+│   ├──────Algorithms [C++]
 │   │       ├──────HOMEWORKS
 │   │       │       ├──────inversion-counter
 │   │       │       ├──────karatsuba
@@ -27,11 +27,11 @@ Map:
 │   │               ├──────square-root
 │   │               └──────student-class
 │   │
-│   ├──────Artificial-Intelligence (CS 541)
+│   ├──────Artificial-Intelligence [Jupyter]
 │   │       └──────HOMEWORKS
 │   │               └──────k-nearest-neighbor
 │   │
-│   ├──────Computer-Architecture (CS 382)
+│   ├──────Computer-Architecture [ARM/C/Logisim]
 │   │       ├──────HOMEWORKS
 │   │       │       ├──────BinarySearch
 │   │       │       └──────CopyString
@@ -46,7 +46,7 @@ Map:
 │   │               ├──────RegisterFile
 │   │               └──────UnrolledLinkedList
 │   │       
-│   ├──────Data-Structures (CS 284)
+│   ├──────Data-Structures [Java]
 │   │       └──────HOMEWORKS
 │   │               ├──────Anagrams
 │   │               ├──────BinaryNumber
@@ -57,7 +57,7 @@ Map:
 │   │               ├──────TaskList
 │   │               └──────Treap
 │   │       
-│   ├──────Discrete-Structures (CS 135)
+│   ├──────Discrete-Structures [Scheme]
 │   │       └──────LABS
 │   │               ├──────crt
 │   │               ├──────list-recursion
@@ -71,7 +71,7 @@ Map:
 │   │               ├──────sets-relations
 │   │               └──────top-sort
 │   │       
-│   ├──────Intro-to-Comp-Sci (CS 115)
+│   ├──────Intro-to-Comp-Sci [Python]
 │   │       ├──────HOMEWORKS
 │   │       │       ├──────date
 │   │       │       ├──────factorial
@@ -93,18 +93,18 @@ Map:
 │   │               ├──────recursion-muscles
 │   │               └──────spell-check
 │   │       
-│   ├──────Machine-Learning (CS 559)
+│   ├──────Machine-Learning [Jupyter]
 │   │       └──────HOMEWORKS
 │   │               └──────linear-regression-(Q4)
 │   │       
-│   └──────Princ.-of-Programming-Languages (CS 496)
+│   └──────Princ.-of-Programming-Languages [Ocaml]
 │           └──────HOMEWORKS
 │                   ├──────gTrees
 │                   ├──────LET-extensions
 │                   └──────mini-logo
 │   
 ├───Events
-│   └──────Advent-of-Code
+│   └──────Advent-of-Code [Python]
 │           ├──────CubeConundrum
 │           ├──────GearRatios
 │           ├──────ScratchCards
@@ -112,9 +112,9 @@ Map:
 │           └──────TreBuchet
 │   
 └───Projects
-    ├──────CUP
-    ├──────IAF
-    ├──────Laptop_Price_Prediction
-    └──────Pringle</code></pre>
+    ├──────CUP [Logisim/Python]
+    ├──────IAF [JavaScript]
+    ├──────Laptop_Price_Prediction [R]
+    └──────Pringle [ARM] </code></pre> 
 
 Contact Info: adibosmany8@gmail.com

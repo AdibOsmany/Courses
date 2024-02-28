@@ -1,7 +1,12 @@
-# Hello! 
+**Hello!** 
 # I'm Adib Osmany. 
-*About: Looking to gain experience in the field of computer science, mainly focusing of software development.*
-# This is my github portfolio. This portfolio contains most of my coding assignments, projects, and a couple of events I was apart of. 
+*Major: Computer Science*
+
+*School: Stevens Institute of Technology*
+
+*About: Looking to gain experience in software development.*
+
+# Welcome to my github portfolio! This portfolio contains most of my coding assignments, projects, and a couple of events I was apart of. 
 <pre><code>
 Map:
 ├───Courses

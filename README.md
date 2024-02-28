@@ -6,7 +6,7 @@
 
 *About: Looking to gain experience in software development.*
 
-# Welcome to my github portfolio! This portfolio contains most of my coding assignments, projects, and a couple of events I was apart of. 
+# Welcome to my github portfolio! This portfolio contains my coding assignments, projects, and a couple of events I was apart of. 
 <pre><code>
 Map:
 ├───Courses

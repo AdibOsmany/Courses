@@ -113,7 +113,7 @@ Map:
 │   
 └───Projects
     ├──────CUP [Logisim/Python]
-    ├──────IAF [JavaScript]
+    ├──────Internship-Application-Filler (IAF) [JavaScript]
     ├──────Laptop_Price_Prediction [R]
     └──────Pringle [ARM] </code></pre> 
 

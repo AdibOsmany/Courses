@@ -1,6 +1,6 @@
 # Hello! 
 # I'm Adib Osmany. 
-# This is my github portfolio. This portfolio contains most of my coding assignments, my projects, and a couple of events I was apart of. 
+# This is my github portfolio. This portfolio contains most of my coding assignments, projects, and a couple of events I was apart of. 
 <pre><code>
 Map:
 ├───Courses

@@ -1,0 +1,3 @@
+- Used a public dataset from Kaggle to develop a linear regression model in R-studio that can estimate laptop prices based on predictors such as RAM, CPU, GPU, Model, Type, Storage, etc. 
+- Used Python to preprocess and clean the data.
+- Created multiple models and cross-examined them with each other to find the best predictors.

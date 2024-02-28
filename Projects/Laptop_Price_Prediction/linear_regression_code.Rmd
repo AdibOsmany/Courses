@@ -1,0 +1,78 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+data <- read.csv("laptop_data_final.csv", header = TRUE, stringsAsFactors = FALSE)
+
+print(data)
+company<- c('data$is_Apple','data$is_HP','data$is_Acer','data$is_Asus','data$is_Dell','data$is_Lenovo','data$is_Chuwi','data$is_MSI','data$is_Microsoft','data$is_Toshiba','data$is_Huawei','data$is_Xiaomi','data$is_Vero','data$is_Razer','data$is_Mediacom','data$is_Samsung','data$is_Google','data$is_Fujitsu','data$is_LG')
+
+type<- c('data$is_Ultrabook','data$is_Notebook','data$is_Netbook','data$is_Gaming','data$is_2.in.1.Convertible','data$is_Workstation')
+
+cpu<- c('data$is_Intel.Core.i5','data$is_Intel.Core.i7','data$is_AMD.Processor','data$is_Intel.Core.i3','data$is_Other.Intel.Processor')
+
+gpu<- c('data$is_Intel','data$is_AMD','data$is_Nvidia')
+
+os<- c('data$is_Mac','data$is_Others','data$is_Windows')
+
+ram<- c('data$Ram')
+
+weight<-c('data$Weight')
+
+touch<-c('data$TouchScreen')
+
+ppi<-c('data$Ppi')
+
+hdd<-c('data$HDD')
+
+ips<-c('data$Ips')
+
+ssd<-c('data$SSD')
+
+regression_model<-function(predictors){
+  formula <- paste("data$Price", paste(predictors, collapse = '+'), sep = "~")
+  formula <- as.formula(formula)
+  model<- lm(formula)
+  model
+}
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+```{r}
+full_model<- regression_model(c(company,type,cpu,gpu,os,ram,weight,ips,hdd,ssd,ppi,touch))
+print("Full Model")
+summary(full_model)
+
+backward_model <- step(full_model, direction = "backward",trace=0)
+print("Backward Model")
+summary(backward_model)
+
+forward_model <- step(full_model, direction = "forward",trace=0)
+print("Forward Model")
+summary(forward_model)
+
+stepwise_model <- step(full_model, direction = "both",trace=0)
+print("Step-Wise Model")
+summary(stepwise_model)
+
+```
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+```{r}
+#after analysizing the charts, the predictors that are the best use are company, ram, weight, touchscreen, ips, ppi, ssd,type, and cpu
+
+personal_model<- regression_model(c(ram,cpu,touch,ips,ppi,ssd,type,weight,company))
+print("personal Model")
+summary(personal_model)
+
+anova(full_model,backward_model,forward_model,stepwise_model,personal_model)
+```
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

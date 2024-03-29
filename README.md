@@ -4,7 +4,7 @@
 
 *School: Stevens Institute of Technology*
 
-*About: Looking to gain experience in software development.*
+*About: Seeking to acquire hands-on experience within the field of Computer Science.*
 
 # Welcome to my github portfolio! 
 This portfolio showcases a collection of my coding assignments, projects, and a couple of events I participated in. 

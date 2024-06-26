@@ -117,4 +117,4 @@ Map:
     ├──────Laptop_Price_Prediction [R]
     └──────Pringle [ARM] </code></pre> 
 
-Contact Info: adibosmany8@gmail.com
+Contact Info: aosmany@stevens.edu

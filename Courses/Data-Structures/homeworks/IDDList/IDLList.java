@@ -88,7 +88,7 @@ public class IDLList<E> {
 	//be set anywhere outside the list, unless it becomes the 
 	//new head or tail of the list. 
 	
-	public boolean add (int index, E elem)  throws Exception{
+	public boolean add (int index, E elem)  {
 		if ((index < 0 || index > size)) {
 			  throw new IndexOutOfBoundsException(); 
 		  }
@@ -141,7 +141,7 @@ public class IDLList<E> {
 	 * list. The data that is received is determined by the
 	 * given index.
 	 */
-	public E get (int index) throws Exception {
+	public E get (int index) {
 		if ((index < 0 || index >= size)) {
 			  throw new IndexOutOfBoundsException(); 
 		  }
@@ -185,7 +185,7 @@ public class IDLList<E> {
 	 * The remove function removes the first node of the
 	 * double linked list.
 	 */
-	public E remove() throws Exception{
+	public E remove() {
 		if (ind.isEmpty()) {
 			  throw new IllegalStateException(); 
 		  }
@@ -202,7 +202,7 @@ public class IDLList<E> {
 	 * of the double linked list.
 	 */
 	
-	public E removeLast()  throws Exception{
+	public E removeLast()  {
 		if (ind.isEmpty()) {
 			  throw new IllegalStateException(); 
 		  }
@@ -220,8 +220,8 @@ public class IDLList<E> {
 	 * given index. 
 	 */
 	
-	public E removeAt(int index) throws Exception{
-		if ((index < 0 || index > size)) {
+	public E removeAt(int index) {
+		if ((index < 0 || index > (size-1))) {
 			  throw new IllegalStateException(); 
 		  }
 		else {
@@ -266,14 +266,19 @@ public class IDLList<E> {
 	}
 	
 	public static void main(String[] arg) {
-		IDLList<Integer> t=new IDLList<Integer>();
-		for (int i=0; i<100;i++) {
-			t.add(i);
-		}
-		ArrayList<Integer> it=new ArrayList<Integer>();
-		it.add(5);
-		it.set(0, 6);
-		System.out.println(it.get(0));
+		IDLList<Integer> list=new IDLList<Integer>();
+        list.append(0);
+        list.add(1, 1); // Adding at the end
+        list.add(1, 2); // Adding in the middle
+		System.out.println(list);
+		System.out.println(list.get(1));
+//		for (int i=0; i<100;i++) {
+//			t.add(i);
+//		}
+//		ArrayList<Integer> it=new ArrayList<Integer>();
+//		it.add(5);
+//		it.set(0, 6);
+//		System.out.println(it.get(0));
 		
 	}
 
